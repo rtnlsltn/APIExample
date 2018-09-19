@@ -1,6 +1,6 @@
 //
-//  ViewController.swift
-//  NextEon Tap
+//  LoginViewController
+//  APIExample
 //
 //  Created by Justin on 9/17/18.
 //  Copyright © 2017 Justin. All rights reserved.
