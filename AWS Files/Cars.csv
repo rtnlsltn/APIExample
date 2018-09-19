@@ -1,0 +1,6 @@
+"Entry (N)","Manufacturer (S)","Cylinders (S)","EngineLocation (S)","EngineSize (S)","HP (S)","Model (S)","ModelYear (S)","TQ (S)","Trim (S)","WheelDrive (S)"
+"0","Porsche","6","Middle","3.4","330 hp","Boxster","2016","273 lb-ft","GTS","Rear"
+"1","Porsche","6","Middle","2.7","265 hp","Boxster","2014","207 lb-ft","S","Rear"
+"2","BMW","6","Front","3.0","365 hp","M2","2016","343 lb-ft","Base","Rear"
+"3","Audi","5","Front","2.5","400 hp","RS3","2019","354 lb-ft","Base","All"
+"4","Mercedes","8","Middle","4.0","503 hp","AMG C63","2016","516 lb-ft","S","Rear"
