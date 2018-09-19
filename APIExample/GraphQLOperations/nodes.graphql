@@ -1,0 +1,18 @@
+
+query AllNodes {
+   listCars {
+    items {
+    Entry
+  	Manufacturer
+  	Cylinders
+  	EngineLocation
+  	EngineSize
+  	HP
+  	Model
+  	ModelYear
+  	TQ
+  	Trim
+  	WheelDrive
+      }
+   }
+}
