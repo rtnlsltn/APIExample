@@ -177,10 +177,10 @@
             </objects>
             <point key="canvasLocation" x="708" y="-630.13493253373315"/>
         </scene>
-        <!--LoginVC-->
+        <!--Login View Controller-->
         <scene sceneID="19v-WN-umX">
             <objects>
-                <viewController storyboardIdentifier="loginvc" id="erC-B5-f65" customClass="LoginVC" customModule="NETap" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginvc" id="erC-B5-f65" customClass="LoginViewController" customModule="APIExample" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MzB-G6-IPG"/>
                         <viewControllerLayoutGuide type="bottom" id="aHT-N5-BQg"/>
@@ -192,7 +192,7 @@
                             <imageView userInteractionEnabled="NO" alpha="0.10000000149011612" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginbg" translatesAutoresizingMaskIntoConstraints="NO" id="oGG-yq-HNk">
                                 <rect key="frame" x="-65" y="0.0" width="1224" height="667"/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6iM-lJ-oP9">
+                            <view contentMode="scaleToFill" horizontalHuggingPriority="200" verticalHuggingPriority="200" horizontalCompressionResistancePriority="600" verticalCompressionResistancePriority="600" translatesAutoresizingMaskIntoConstraints="NO" id="6iM-lJ-oP9">
                                 <rect key="frame" x="10" y="30" width="355" height="426"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="200" verticalHuggingPriority="200" horizontalCompressionResistancePriority="200" verticalCompressionResistancePriority="751" image="logofull" translatesAutoresizingMaskIntoConstraints="NO" id="aii-8R-C4U">
@@ -209,7 +209,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5cu-gs-Xco">
                                 <rect key="frame" x="10" y="456" width="355" height="201"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Justin" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zbf-am-4cS">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="User" borderStyle="roundedRect" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zbf-am-4cS">
                                         <rect key="frame" x="40" y="30" width="275" height="30"/>
                                         <color key="backgroundColor" red="0.99572790280000001" green="0.98763121220000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -219,7 +219,7 @@
                                         <fontDescription key="fontDescription" name="AgencyFB-Bold" family="Agency FB" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Test" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iuY-aT-JY3">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Test" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iuY-aT-JY3">
                                         <rect key="frame" x="40" y="73" width="275" height="30"/>
                                         <color key="backgroundColor" red="0.99621552229999999" green="0.98881703620000005" blue="0.99990695709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -230,7 +230,7 @@
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="79t-0r-YHa">
-                                        <rect key="frame" x="125" y="115" width="105" height="33"/>
+                                        <rect key="frame" x="156" y="113" width="43" height="32"/>
                                         <color key="backgroundColor" red="0.1333333333" green="0.47843137250000001" blue="1" alpha="0.38698630140000001" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="AgencyFB-Bold" family="Agency FB" pointSize="17"/>
                                         <state key="normal" title="Login"/>
@@ -241,15 +241,14 @@
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="iuY-aT-JY3" secondAttribute="trailing" constant="40" id="9eK-zY-huA"/>
-                                    <constraint firstItem="79t-0r-YHa" firstAttribute="top" secondItem="iuY-aT-JY3" secondAttribute="bottom" constant="12" id="PNm-um-0em"/>
+                                    <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="iuY-aT-JY3" secondAttribute="trailing" constant="40" id="9eK-zY-huA"/>
                                     <constraint firstItem="Zbf-am-4cS" firstAttribute="top" secondItem="5cu-gs-Xco" secondAttribute="top" constant="30" id="QnO-Uf-w3H"/>
-                                    <constraint firstAttribute="trailing" secondItem="Zbf-am-4cS" secondAttribute="trailing" constant="40" id="SFv-br-FJ5"/>
-                                    <constraint firstItem="iuY-aT-JY3" firstAttribute="leading" secondItem="5cu-gs-Xco" secondAttribute="leading" constant="40" id="V8K-DI-bQN"/>
+                                    <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="Zbf-am-4cS" secondAttribute="trailing" constant="40" id="SFv-br-FJ5"/>
+                                    <constraint firstItem="iuY-aT-JY3" firstAttribute="leading" relation="lessThanOrEqual" secondItem="5cu-gs-Xco" secondAttribute="leading" constant="40" id="V8K-DI-bQN"/>
                                     <constraint firstItem="iuY-aT-JY3" firstAttribute="top" secondItem="Zbf-am-4cS" secondAttribute="bottom" constant="13" id="ZSH-O8-Ag1"/>
-                                    <constraint firstItem="79t-0r-YHa" firstAttribute="leading" secondItem="5cu-gs-Xco" secondAttribute="leading" constant="125" id="ZjG-Mg-ftz"/>
-                                    <constraint firstItem="Zbf-am-4cS" firstAttribute="leading" secondItem="5cu-gs-Xco" secondAttribute="leading" constant="40" id="gNf-0t-bzv"/>
-                                    <constraint firstAttribute="trailing" secondItem="79t-0r-YHa" secondAttribute="trailing" constant="125" id="y3U-A0-jtG"/>
+                                    <constraint firstItem="79t-0r-YHa" firstAttribute="centerX" secondItem="5cu-gs-Xco" secondAttribute="centerX" id="cEr-FS-KyM"/>
+                                    <constraint firstItem="79t-0r-YHa" firstAttribute="top" secondItem="iuY-aT-JY3" secondAttribute="bottom" constant="10" id="caA-SC-i8m"/>
+                                    <constraint firstItem="Zbf-am-4cS" firstAttribute="leading" relation="lessThanOrEqual" secondItem="5cu-gs-Xco" secondAttribute="leading" constant="40" id="gNf-0t-bzv"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -264,7 +263,6 @@
                             <constraint firstItem="4dZ-2v-uF2" firstAttribute="trailing" secondItem="5cu-gs-Xco" secondAttribute="trailing" constant="10" id="ij2-Zo-bJy"/>
                             <constraint firstItem="6iM-lJ-oP9" firstAttribute="top" secondItem="rV9-IS-Md8" secondAttribute="top" constant="30" id="l1e-Sz-eKd"/>
                             <constraint firstItem="5cu-gs-Xco" firstAttribute="top" secondItem="6iM-lJ-oP9" secondAttribute="bottom" id="oKY-G7-Zm6"/>
-                            <constraint firstItem="4dZ-2v-uF2" firstAttribute="top" secondItem="6iM-lJ-oP9" secondAttribute="top" constant="34" id="pVO-61-ZyX"/>
                             <constraint firstItem="6iM-lJ-oP9" firstAttribute="leading" secondItem="4dZ-2v-uF2" secondAttribute="leading" constant="10" id="tvh-vp-UJl"/>
                             <constraint firstItem="aHT-N5-BQg" firstAttribute="top" secondItem="5cu-gs-Xco" secondAttribute="bottom" constant="10" id="x08-q4-YDm"/>
                         </constraints>

@@ -9,7 +9,7 @@
 import UIKit
 //import AWSCognitoIdentityProvider
 
-class LoginVC: UIViewController {
+class LoginViewController: UIViewController {
     
     @IBOutlet weak var imgLogo: UIImageView!
     @IBOutlet weak var txtUsername: UITextField!
@@ -35,7 +35,6 @@ class LoginVC: UIViewController {
             self.btnLogin.layer.shadowOffset = CGSize.zero
             self.btnLogin.layer.shadowOpacity = 0.5
         }
-
         
         //background motion effect
         let horizontalMotionEffect = UIInterpolatingMotionEffect(keyPath: "center.x", type: .tiltAlongHorizontalAxis)
@@ -73,6 +72,7 @@ class LoginVC: UIViewController {
         self.navigationController?.isNavigationBarHidden = false;
     }
     
+    //adjust VC for keyboard fitment
     @objc func keyboardWillShow(notification: NSNotification) {
         if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
             if self.viewLogin.frame.origin.y == 0{
@@ -80,7 +80,6 @@ class LoginVC: UIViewController {
             }
         }
     }
-    
     @objc func keyboardWillHide(notification: NSNotification) {
         if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
             if self.viewLogin.frame.origin.y != 0{
@@ -89,6 +88,7 @@ class LoginVC: UIViewController {
         }
     }
     
+    // MARK: - Animation
     func logoAnimationIn(){
         imgLogo.transform = CGAffineTransform(scaleX: 0.7, y: 0.7)
         UIView.animate(withDuration: 1.5,
@@ -100,7 +100,6 @@ class LoginVC: UIViewController {
                         self?.imgLogo.transform = .identity
             },
                        completion: nil)
-        
     }
     func logoAnimationOut(){
         UIView.animate(withDuration: 0.5, animations: {
@@ -108,20 +107,9 @@ class LoginVC: UIViewController {
         })
     }
     
-    @IBAction func btnLoginPress(_ sender: Any) {
-        logoAnimationIn()
-        //        if (self.txtUsername.text != nil && self.txtPassword.text != nil) {
-        //            let authDetails = AWSCognitoIdentityPasswordAuthenticationDetails(username: self.txtUsername.text!, password: self.txtPassword.text! )
-        //            self.passwordAuthenticationCompletion?.set(result: authDetails)
-        //            print("Auth Pass")
-        //        } else {
-        //            let alertController = UIAlertController(title: "Missing information",
-        //                                                    message: "Please enter a valid user name and password",
-        //                                                    preferredStyle: .alert)
-        //            let retryAction = UIAlertAction(title: "Retry", style: .default, handler: nil)
-        //            alertController.addAction(retryAction)
-        //        }
-        if (txtUsername.text == "Justin" && txtPassword.text == "Test"){
+    @IBAction func btnLoginPress(_ sender: AnyObject?) {
+        //Typically would call AWS Cognito, see commented section below for example
+        if (txtUsername.text == "User" && txtPassword.text == "Test"){
             logoAnimationOut()
             UserDefaults.standard.set(true, forKey: "status")
             

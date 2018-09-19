@@ -16,8 +16,6 @@
 		D042DC462151AF65009B3156 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D042DC442151AF65009B3156 /* Main.storyboard */; };
 		D042DC482151AF66009B3156 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D042DC472151AF66009B3156 /* Assets.xcassets */; };
 		D042DC4B2151AF66009B3156 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D042DC492151AF66009B3156 /* LaunchScreen.storyboard */; };
-		D042DC562151AF66009B3156 /* APIExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D042DC552151AF66009B3156 /* APIExampleTests.swift */; };
-		D042DC612151AF66009B3156 /* APIExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D042DC602151AF66009B3156 /* APIExampleUITests.swift */; };
 		D042DC732151B151009B3156 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = D042DC722151B151009B3156 /* Node.swift */; };
 		D042DC762151B205009B3156 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D042DC752151B205009B3156 /* Constants.swift */; };
 		D042DC782151B316009B3156 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = D042DC772151B316009B3156 /* awsconfiguration.json */; };
@@ -60,11 +58,7 @@
 		D042DC4A2151AF66009B3156 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D042DC4C2151AF66009B3156 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D042DC512151AF66009B3156 /* APIExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APIExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D042DC552151AF66009B3156 /* APIExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIExampleTests.swift; sourceTree = "<group>"; };
-		D042DC572151AF66009B3156 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D042DC5C2151AF66009B3156 /* APIExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APIExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D042DC602151AF66009B3156 /* APIExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIExampleUITests.swift; sourceTree = "<group>"; };
-		D042DC622151AF66009B3156 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D042DC722151B151009B3156 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		D042DC752151B205009B3156 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D042DC772151B316009B3156 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
@@ -118,8 +112,6 @@
 			isa = PBXGroup;
 			children = (
 				D042DC3D2151AF65009B3156 /* APIExample */,
-				D042DC542151AF66009B3156 /* APIExampleTests */,
-				D042DC5F2151AF66009B3156 /* APIExampleUITests */,
 				D042DC3C2151AF65009B3156 /* Products */,
 				78E699C73EAD8FA0FDAEE3A1 /* Pods */,
 				D711C1F53C90AA6173FA71CA /* Frameworks */,
@@ -139,32 +131,14 @@
 		D042DC3D2151AF65009B3156 /* APIExample */ = {
 			isa = PBXGroup;
 			children = (
-				D042DC4C2151AF66009B3156 /* Info.plist */,
 				D042DC712151B117009B3156 /* Storyboard */,
 				D042DC6F2151B0B6009B3156 /* Models */,
 				D042DC6E2151B097009B3156 /* ViewControllers */,
-				D042DC472151AF66009B3156 /* Assets.xcassets */,
 				D042DC702151B0BD009B3156 /* SupportFiles */,
+				D042DC4C2151AF66009B3156 /* Info.plist */,
+				D042DC472151AF66009B3156 /* Assets.xcassets */,
 			);
 			path = APIExample;
-			sourceTree = "<group>";
-		};
-		D042DC542151AF66009B3156 /* APIExampleTests */ = {
-			isa = PBXGroup;
-			children = (
-				D042DC552151AF66009B3156 /* APIExampleTests.swift */,
-				D042DC572151AF66009B3156 /* Info.plist */,
-			);
-			path = APIExampleTests;
-			sourceTree = "<group>";
-		};
-		D042DC5F2151AF66009B3156 /* APIExampleUITests */ = {
-			isa = PBXGroup;
-			children = (
-				D042DC602151AF66009B3156 /* APIExampleUITests.swift */,
-				D042DC622151AF66009B3156 /* Info.plist */,
-			);
-			path = APIExampleUITests;
 			sourceTree = "<group>";
 		};
 		D042DC6E2151B097009B3156 /* ViewControllers */ = {
@@ -454,7 +428,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D042DC562151AF66009B3156 /* APIExampleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,7 +435,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D042DC612151AF66009B3156 /* APIExampleUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

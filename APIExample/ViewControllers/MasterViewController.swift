@@ -44,6 +44,7 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
         }
     }
     
+    // MARK: - AWS-Load Cars
     func loadAllNodes() {
         //hardcoded AWS database name, typically I pull my database subset from a single database then build the rest of my objects outward.
         let databaseURL = URL(fileURLWithPath:NSTemporaryDirectory()).appendingPathComponent(database_name)
